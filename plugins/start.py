@@ -9,6 +9,6 @@ async def start(client, message):
         [InlineKeyboardButton(
             "Report Bugs 😊", url="https://t.me/aryanvikash")]
     ])
-    welcomed = f"Hey <b>{message.from_user.first_name}</b>\n/help for More info"
+    welcomed = f"سلام <b>{message.from_user.first_name}</b> با این ربات می تونید خیلی راحت هر ویدیوی یوتیوبی رو دانلود کنید . اما قبلش لطفا عضو کانال زیر بشید و بعد\n/ادامه رو کلیک کنید"
     await message.reply_text(welcomed, reply_markup=joinButton)
     raise StopPropagation
