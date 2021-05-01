@@ -160,6 +160,10 @@ async def send_file(c, q, med, filename):
         try:
             os.remove(filename)
             os.remove(thumb_image_path)
-            
+             # adv
+        try:
+            thumbnail_url = "https://telegra.ph/file/ce37f8203e1903feed544.png"
+            await message.reply_photo(thumbnail_url, caption="تست", reply_markup=buttons)    
+            # adv
         except:
             pass
