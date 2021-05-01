@@ -5,10 +5,10 @@ from pyrogram import Client, Filters, StopPropagation, InlineKeyboardButton, Inl
 async def start(client, message):
     # return
     joinButton = InlineKeyboardMarkup([
-        [InlineKeyboardButton("Channel", url="https://t.me/aryan_bots")],
+        [InlineKeyboardButton("عضویت در کانال", url="https://t.me/Hamrahmedia")],
         [InlineKeyboardButton(
-            "Report Bugs 😊", url="https://t.me/aryanvikash")]
+            "ادامه", url="help")]
     ])
-    welcomed = f"سلام <b>{message.from_user.first_name}</b> با این ربات می تونید خیلی راحت هر ویدیوی یوتیوبی رو دانلود کنید . اما قبلش لطفا عضو کانال زیر بشید و بعد\n/ادامه رو کلیک کنید"
+    welcomed = f"Hey <b>{message.from_user.first_name}</b>\n/help for More info"
     await message.reply_text(welcomed, reply_markup=joinButton)
     raise StopPropagation
