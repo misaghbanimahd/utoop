@@ -160,5 +160,6 @@ async def send_file(c, q, med, filename):
         try:
             os.remove(filename)
             os.remove(thumb_image_path)
+            await m.edit_message_reply_markup(buttons)
         except:
             pass
