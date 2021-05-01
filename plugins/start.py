@@ -9,6 +9,6 @@ async def start(client, message):
         [InlineKeyboardButton(
             "ادامه", callback_data='/help')]
     ])
-    welcomed = f"Hey <b>{message.from_user.first_name}</b>\n/help for More info"
+    welcomed = f"Hey <b>{message.from_user.first_name}</b>\n/hel for More info"
     await message.reply_text(welcomed, reply_markup=joinButton)
     raise StopPropagation
