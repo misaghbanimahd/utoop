@@ -156,7 +156,8 @@ async def send_file(c, q, med, filename):
     except Exception as e:
         print(e)
         await q.edit_message_text(e)
-         
+          thumbnail_url = "https://telegra.ph/file/ce37f8203e1903feed544.png"
+            await message.reply_photo(thumbnail_url, caption="hhh")
         
             
     finally:
