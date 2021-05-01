@@ -161,7 +161,7 @@ async def send_file(c, q, med, filename):
             os.remove(filename)
             os.remove(thumb_image_path)
              # adv
-        try:
+        
           joinButton = InlineKeyboardMarkup([
         [InlineKeyboardButton("عضویت در کانال", url="https://t.me/Hamrahmedia")],
         [InlineKeyboardButton(
