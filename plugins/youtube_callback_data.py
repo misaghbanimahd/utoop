@@ -155,10 +155,9 @@ async def send_file(c, q, med, filename):
         await q.edit_message_media(media=med)
     except Exception as e:
         print(e)
-        await q.edit_message_text(e)
-          q.send_message(chat_id=chat_id, 
-                 text='<b>bold</b> <i>italic</i> <a href="http://google.com">link</a>.', 
-                 parse_mode=telegram.ParseMode.HTML)
+    #    await q.edit_message_text(e)
+    await q.edit_message_reply_markup([[InlineKeyboardButton("Processing..")]])
+          
         
             
     finally:
