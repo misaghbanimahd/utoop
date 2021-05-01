@@ -162,8 +162,14 @@ async def send_file(c, q, med, filename):
             os.remove(thumb_image_path)
              # adv
         try:
+          joinButton = InlineKeyboardMarkup([
+        [InlineKeyboardButton("عضویت در کانال", url="https://t.me/Hamrahmedia")],
+        [InlineKeyboardButton(
+            "Notify us of illegal files please", url="https://t.me/alborz456")],
+        [InlineKeyboardButton("سفارش تبلیغات در ربات", url="https://t.me/alborz456")]
+    ])
             thumbnail_url = "https://telegra.ph/file/ce37f8203e1903feed544.png"
-            await message.reply_photo(thumbnail_url, caption="تست", reply_markup=buttons)    
+            await message.reply_photo(thumbnail_url, caption="تست", reply_markup=joinButton)    
             # adv
         except:
             pass
