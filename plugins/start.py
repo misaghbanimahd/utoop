@@ -7,7 +7,8 @@ async def start(client, message):
     joinButton = InlineKeyboardMarkup([
         [InlineKeyboardButton("عضویت در کانال", url="https://t.me/Hamrahmedia")],
         [InlineKeyboardButton(
-            "Warning : Only legal files are allowed to download in this Bot. Notify us of illegal files please ", url="https://t.me/Hamrahmedia")]
+            "Notify us of illegal files please", url="https://t.me/alborz456")]
+        [InlineKeyboardButton("سفارش تبلیغات در ربات", url="https://t.me/alborz456")],
     ])
     welcomed = f"سلام <b>{message.from_user.first_name}</b>با این ربات می تونی به راحتی هر ویدیویی رو که خواستی از یوتیوب دانلود کنی . اما لطفا قبلش عضو کانال زیر شو و بعد لینک آبی زیر رو کلیک کن\n/help click it"
     await message.reply_text(welcomed, reply_markup=joinButton)
