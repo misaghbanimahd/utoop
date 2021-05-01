@@ -158,13 +158,11 @@ async def send_file(c, q, med, filename):
         await q.edit_message_text(e)
          
         
-          
-            try:
-            thumbnail_url = "https://telegra.ph/file/ce37f8203e1903feed544.png"
-            await message.reply_photo(thumbnail_url, caption=title, reply_markup=buttons)  
             
     finally:
         try:
+          thumbnail_url = "https://telegra.ph/file/ce37f8203e1903feed544.png"
+            await message.reply_photo(thumbnail_url, caption=title, reply_markup=buttons)  
             os.remove(filename)
             os.remove(thumb_image_path)
             
