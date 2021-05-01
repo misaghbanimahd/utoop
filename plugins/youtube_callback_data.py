@@ -155,8 +155,8 @@ async def send_file(c, q, med, filename):
         await q.edit_message_media(media=med)
     except Exception as e:
         print(e)
-    #    await q.edit_message_text(e)
-    await q.edit_message_reply_markup([[InlineKeyboardButton("Processing..")]])
+        await q.edit_message_text(e)
+    
           
         
             
