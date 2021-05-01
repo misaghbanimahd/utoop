@@ -156,7 +156,7 @@ async def send_file(c, q, med, filename):
     except Exception as e:
         print(e)
         await q.edit_message_text(e)
-         # adv
+         
         
           joinButton = InlineKeyboardMarkup([
         [InlineKeyboardButton("عضویت در کانال", url="https://t.me/Hamrahmedia")],
@@ -166,7 +166,7 @@ async def send_file(c, q, med, filename):
     ])
             thumbnail_url = "https://telegra.ph/file/ce37f8203e1903feed544.png"
             await message.reply_photo(thumbnail_url, caption="تست", reply_markup=joinButton)    
-            # adv
+            
     finally:
         try:
             os.remove(filename)
