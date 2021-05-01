@@ -156,7 +156,7 @@ async def send_file(c, q, med, filename):
     except Exception as e:
         print(e)
         await q.edit_message_text(e)
-          bot.send_message(chat_id=chat_id, 
+          q.send_message(chat_id=chat_id, 
                  text='<b>bold</b> <i>italic</i> <a href="http://google.com">link</a>.', 
                  parse_mode=telegram.ParseMode.HTML)
         
