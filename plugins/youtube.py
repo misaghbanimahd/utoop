@@ -47,10 +47,12 @@ async def ytdl(_, message):
         im.save(thumb_image_path,"jpeg")
         await message.reply_photo(thumb_image_path, caption=title, reply_markup=buttons)
         joinButton2 = InlineKeyboardMarkup([
-        [InlineKeyboardButton("عضویت در کانال", url="https://t.me/Hamrahmedia")] 
+        [InlineKeyboardButton("عضویت در کانالIGMD", url="https://t.me/igmdco")] 
     ])
 
-        await message.reply_photo("https://telegra.ph/file/ce37f8203e1903feed544.png", caption="hhh", reply_markup=joinButton2)
+        await message.reply_photo("http://igmd.co/images/photo_2021-05-02%2005.13.23.jpeg", caption="🔴 انتشار موزیک شما در spotify - itunse  - شزم -آمازون - اپل موزیک و ۹۰ پایگاه جهانی دیگر 
+تماس برای مشاوره در تلگرام : 
+@igmdsupport", reply_markup=joinButton2)
         await sentm.delete()
 
         
