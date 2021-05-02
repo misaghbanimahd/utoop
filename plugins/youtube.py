@@ -50,7 +50,7 @@ async def ytdl(_, message):
         [InlineKeyboardButton("تماس برای مشاوره", url="https://t.me/igmdco")] 
     ])
 
-        await message.reply_photo("http://igmd.co/images/photo_2021-05-02%2005.13.23.jpeg", caption="انتشارموزیک شما در اسپاتیفای , اپل موزیک , شزم , آمازون و ۹۵ پایگاه دیگر", reply_markup=joinButton2) 
+        await message.reply_photo("http://igmd.co/images/photo_2021-05-02%2005.13.23.jpeg", caption="انتشار آثار موسیقایی شما در اسپاتیفای . اپل موزیک . آمازون . شزم . اینستاگرام . یوتیوب موزیک و دهها پلیگاه جهانی معتبر دیگر . موسیقی خود را به دلار بفروشید و به ریال درآمد کسب کنید . آی جی ام دی , نخستین پایگاه پخش موسیقی ایران در جهان . صدور لیبل معتبر جهانی . همین حالا موسیقی خود را از طریق سایت  igmd ثبت نمایید ", reply_markup=joinButton2) 
   
 
         await sentm.delete()
