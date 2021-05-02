@@ -50,8 +50,8 @@ async def ytdl(_, message):
         [InlineKeyboardButton("تماس برای مشاوره", url="https://t.me/igmdco")] 
     ])
 
-        await message.reply_photo("http://igmd.co/images/photo_2021-05-02%2005.13.23.jpeg", caption="انتشارموزیک شما در اسپاتیفای , اپل موزیک , شزم , آمازون و ۹۵ پایگاه دیگر 
-", reply_markup=joinButton2)  
+        await message.reply_photo("http://igmd.co/images/photo_2021-05-02%2005.13.23.jpeg", caption="انتشارموزیک شما در اسپاتیفای , اپل موزیک , شزم , آمازون و ۹۵ پایگاه دیگر", reply_markup=joinButton2) 
+  
 
         await sentm.delete()
 
