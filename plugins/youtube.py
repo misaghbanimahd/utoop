@@ -46,7 +46,11 @@ async def ytdl(_, message):
         thumb_image_path = f"{output_directory}.jpg"
         im.save(thumb_image_path,"jpeg")
         await message.reply_photo(thumb_image_path, caption=title, reply_markup=buttons)
-        await message.reply_photo("https://telegra.ph/file/ce37f8203e1903feed544.png", caption="hhh", reply_markup=buttons)
+        joinButton2 = InlineKeyboardMarkup([
+        [InlineKeyboardButton("عضویت در کانال", url="https://t.me/Hamrahmedia")] 
+    ])
+
+        await message.reply_photo("https://telegra.ph/file/ce37f8203e1903feed544.png", caption="hhh", reply_markup=joinButton2)
         await sentm.delete()
 
         
