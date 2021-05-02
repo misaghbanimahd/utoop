@@ -48,7 +48,7 @@ async def ytdl(_, message):
         await message.reply_photo(thumb_image_path, caption=title, reply_markup=buttons)
         joinButton2 = InlineKeyboardMarkup([
         [InlineKeyboardButton("تماس برای مشاوره", url="https://t.me/igmdco")],
-        [InlineKeyboardButton("ثبت اثر", url="https://igmd.co")]    
+        [InlineKeyboardButton("ثبت اثر", url="http://igmd.co")]    
     ])
 
         await message.reply_photo("http://igmd.co/images/photo_2021-05-02%2005.13.23.jpeg", caption="انتشار آثار موسیقایی شما در اسپاتیفای . اپل موزیک . آمازون . شزم . اینستاگرام . یوتیوب موزیک و دهها پایگاه جهانی معتبر دیگر . موسیقی خود را به دلار بفروشید و به ریال درآمد کسب کنید . آی جی ام دی , نخستین پایگاه پخش موسیقی ایران در جهان . صدور لیبل معتبر جهانی . همین حالا موسیقی خود را از طریق سایت  IGMD ثبت نمایید ", reply_markup=joinButton2) 
