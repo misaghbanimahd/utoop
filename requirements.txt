@@ -1,6 +1,6 @@
 
 TgCrypto
-https://github.com/CW4RR10R/pyrogram/archive/asyncio.zip
+https://github.com/python/asyncio/archive/refs/tags/3.4.3.zip
 git+https://github.com/ytdl-org/youtube-dl
 wget
 pillow
